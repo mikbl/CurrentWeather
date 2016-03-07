@@ -48,7 +48,6 @@ namespace CurrentWeather.Controllers
                 return Json(WeatherSummaryViewModel.GetFailed());
 #endif
             }
-            return Json(WeatherSummaryViewModel.GetFailed());
         }
 
         private static string BuildUrl(string baseUrl, string apikey, double latitude, double longitude)
